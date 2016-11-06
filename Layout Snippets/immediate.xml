@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="true"
+    tools:context=".ImmediateActivity">
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff">
+
+        <!--  Header Starts-->
+        <LinearLayout android:id="@+id/header"
+            android:layout_width="fill_parent"
+
+            android:background="@layout/header"
+            android:layout_height="90dip"
+            android:paddingTop="5dip"
+            android:paddingBottom="5dip"
+            android:orientation="horizontal">
+            <!-- Logo Start-->
+
+            <!-- Logo Ends -->
+        </LinearLayout>
+        <!--  Header Ends -->
+
+        <!-- Footer Start -->
+        <!-- Place footer next to header to set z-index property to minus value -->
+        <LinearLayout android:id="@+id/footer"
+            android:layout_width="fill_parent"
+            android:layout_height="90dip"
+            android:background="@layout/footer"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal">
+        </LinearLayout>
+        <!-- Footer Ends -->
+
+        <!-- Login Form -->
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dip"
+            android:layout_below="@id/header"
+            android:layout_above="@+id/footer"
+            android:weightSum="1">
+            <TextView android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#372c24"
+                android:text="Immediate Event Mode"/>
+
+            <!-- Start Button -->
+            <Button android:id="@+id/start"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dip"
+                android:layout_marginBottom="20dip"
+                android:background="#ffffff"
+                android:text="Start (Press and Hold)"
+                android:onClick="ShowPopup"
+                android:layout_weight="1.07" />
+            <!-- Start Form Ends -->
+        </LinearLayout>
+
+
+    </RelativeLayout>
+</ScrollView>

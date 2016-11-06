@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:fillViewport="true">
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff">
+
+        <!--  Header  Starts-->
+        <LinearLayout android:id="@+id/header"
+            android:layout_width="fill_parent"
+
+            android:background="@layout/header"
+            android:layout_height="90dip"
+            android:paddingTop="5dip"
+            android:paddingBottom="5dip"
+            android:orientation="horizontal">
+            <!-- Logo Start-->
+
+            <!-- Logo Ends -->
+        </LinearLayout>
+        <!--  Header Ends -->
+
+        <!-- Footer Start -->
+        <LinearLayout android:id="@+id/footer"
+            android:layout_width="fill_parent"
+            android:layout_height="90dip"
+            android:background="@layout/footer"
+            android:orientation="horizontal"
+            android:layout_alignParentBottom="true">
+        </LinearLayout>
+        <!-- Footer Ends -->
+
+        <!-- Registration Form -->
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dip"
+            android:layout_below="@id/header">
+
+            <TextView android:id="@+id/demoMessage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="#372c24"
+                android:text="Your Text Message Will Populate Here"/>
+
+            <Button android:id="@+id/btnAccountInfo"
+                android:textColor="#ffffff"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dip"
+                android:layout_marginBottom="29dp"
+                android:background="#6b6964"
+                android:text="Account Information"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp"
+                android:onClick="onSave"
+                android:layout_above="@+id/footer"/>
+            <Button android:id="@+id/btnPersonalInfo"
+                android:textColor="#ffffff"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dip"
+                android:layout_marginBottom="29dp"
+                android:background="#6b6964"
+                android:text="Personal Information"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp"
+                android:onClick="onSave"
+                android:layout_above="@+id/footer"/>
+
+            <Button android:id="@+id/btnAlertOpt"
+                android:textColor="#ffffff"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dip"
+                android:layout_marginBottom="29dp"
+                android:background="#6b6964"
+                android:text="Alert Options"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp"
+                android:onClick="onSave"
+                android:layout_above="@+id/footer"/>
+
+            <Button android:id="@+id/btnTextOpt"
+                android:textColor="#ffffff"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dip"
+                android:layout_marginBottom="29dp"
+                android:background="#6b6964"
+                android:text="Text Message Options"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp"
+                android:onClick="onSave"
+                android:layout_above="@+id/footer"/>
+
+            <!-- Register Button -->
+
+            <Button android:id="@+id/btnDone"
+                android:textColor="#372c24"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dip"
+                android:layout_marginBottom="29dp"
+                android:background="#ffffff"
+                android:text="Done"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp"
+                android:onClick="onSave"
+                android:layout_above="@+id/footer"/>
+            <!-- Link to Login Screen -->
+
+
+        </LinearLayout>
+        <!-- Registration Form Ends -->
+    </RelativeLayout>
+</ScrollView>

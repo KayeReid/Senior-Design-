@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:fillViewport="true">
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff">
+
+        <!--  Header  Starts-->
+        <LinearLayout android:id="@+id/header"
+            android:layout_width="fill_parent"
+
+            android:background="@layout/header"
+            android:layout_height="90dip"
+            android:paddingTop="5dip"
+            android:paddingBottom="5dip"
+            android:orientation="horizontal">
+            <!-- Logo Start-->
+
+            <!-- Logo Ends -->
+        </LinearLayout>
+        <!--  Header Ends -->
+
+        <!-- Footer Start -->
+        <LinearLayout android:id="@+id/footer"
+            android:layout_width="fill_parent"
+            android:layout_height="90dip"
+            android:background="@layout/footer"
+            android:orientation="horizontal"
+            android:layout_alignParentBottom="true">
+        </LinearLayout>
+        <!-- Footer Ends -->
+
+        <!-- Registration Form -->
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dip"
+            android:layout_below="@id/header">
+
+            <TextView android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#372c24"
+                android:text="@string/age"/>
+            <EditText android:id="@+id/age"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:password="true"
+                android:singleLine="true"
+                android:layout_marginTop="5dip"
+                android:layout_marginBottom="20dip"/>
+            <TextView android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#372c24"
+                android:text="@string/physical_description"/>
+            <TextView android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#372c24"
+                android:text="@string/include_height_weight_hair_eye_skin_color_clothing_any_other_distictive_features"/>
+
+            <EditText android:id="@+id/physical_description"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:password="true"
+                android:singleLine="true"
+                android:layout_marginTop="5dip"
+                android:layout_marginBottom="20dip"/>
+
+            <TextView android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#372c24"
+                android:text="@string/medical_history_allergies_medical_conditions_disabilities"/>
+
+            <EditText android:id="@+id/Medical_History"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:password="true"
+                android:singleLine="true"
+                android:layout_marginTop="5dip"
+                android:layout_marginBottom="20dip"
+                android:text="@string/Medical_History"/>
+            <Switch
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/are_you_alone_no_yes"
+                android:id="@+id/switch1" />
+            <TextView android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#372c24"
+                android:text="@string/going_to"/>
+
+            <EditText android:id="@+id/Going_to"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:password="true"
+                android:singleLine="true"
+                android:layout_marginTop="5dip"
+                android:layout_marginBottom="20dip"/>
+
+            <TextView android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#372c24"
+                android:text="@string/coming_from"/>
+
+            <EditText android:id="@+id/Coming_from"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:password="true"
+                android:singleLine="true"
+                android:layout_marginTop="5dip"
+                android:layout_marginBottom="20dip"/>
+
+            <!-- Save Button -->
+
+            <Button android:id="@+id/btnSave"
+                android:textColor="#ffffff"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dip"
+                android:layout_marginBottom="29dp"
+                android:background="#6b6964"
+                android:text="@string/save"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp"
+                android:onClick="onSave"
+                android:layout_above="@+id/footer"/>
+            <!-- Link to Login Screen -->
+
+
+        </LinearLayout>
+        <!-- Registration Form Ends -->
+    </RelativeLayout>
+</ScrollView>

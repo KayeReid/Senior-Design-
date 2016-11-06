@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:fillViewport="true">
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff">
+
+        <!--  Header  Starts-->
+        <LinearLayout android:id="@+id/header"
+            android:layout_width="fill_parent"
+
+            android:background="@layout/header"
+            android:layout_height="90dip"
+            android:paddingTop="5dip"
+            android:paddingBottom="5dip"
+            android:orientation="horizontal">
+            <!-- Logo Start-->
+
+            <!-- Logo Ends -->
+        </LinearLayout>
+        <!--  Header Ends -->
+
+        <!-- Footer Start -->
+        <LinearLayout android:id="@+id/footer"
+            android:layout_width="fill_parent"
+            android:layout_height="90dip"
+            android:background="@layout/footer"
+            android:orientation="horizontal"
+            android:layout_alignParentBottom="true">
+        </LinearLayout>
+        <!-- Footer Ends -->
+
+        <!-- Registration Form -->
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dip"
+            android:layout_below="@id/header">
+
+
+
+
+
+
+            <Switch
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/send_alerts_to_this_contact_no_yes"
+                android:id="@+id/switch4" />
+
+
+            <Switch
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/send_alerts_to_this_contact_no_yes"
+                android:id="@+id/switch5" />
+
+            <Switch
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/security_question_or_pin_security_question_pin"
+                android:id="@+id/switch2" />
+
+            <Switch
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/text_911_no_yes"
+                android:id="@+id/switch3" />
+
+            <TextView android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#372c24"
+                android:text="@string/time_to_wait_before_ending_alert_seconds"/>
+
+            <NumberPicker
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/timePicker"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp" />
+
+            <!-- Register Button -->
+
+            <Button android:id="@+id/btnSave"
+                android:textColor="#ffffff"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dip"
+                android:layout_marginBottom="29dp"
+                android:background="#6b6964"
+                android:text="@string/save"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp"
+                android:onClick="onSave"
+                android:layout_above="@+id/footer"/>
+            <!-- Link to Login Screen -->
+
+
+        </LinearLayout>
+        <!-- Registration Form Ends -->
+    </RelativeLayout>
+</ScrollView>
